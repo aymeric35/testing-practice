@@ -2,13 +2,13 @@ import {describe, it, expect} from 'vitest';
 import Calculator from './calculator';
 
 describe('Calculator add method', () => {
-  it('should return the result of an addition correctly', () => {
+  it('should return the result of an addition', () => {
     expect(Calculator.add(1, 1)).toBe(2);
     expect(Calculator.add(10, 10)).toBe(20);
     expect(Calculator.add(100, 100)).toBe(200);
     expect(Calculator.add(1472568, 9112472)).toBe(10585040);
   })
-  it('should calculate negative numbers correctly', () => {
+  it('should calculate negative numbers', () => {
     expect(Calculator.add(-1, -1)).toBe(-2);
     expect(Calculator.add(-1, 50)).toBe(49);
     expect(Calculator.add(-800, -42215)).toBe(-43015);
@@ -23,13 +23,13 @@ describe('Calculator add method', () => {
 })
 
 describe('Calculator substract method', () => {
-  it('should return the result of a substraction correctly', () => {
+  it('should return the result of a substraction', () => {
     expect(Calculator.substract(1, 1)).toBe(0);
     expect(Calculator.substract(20, 10)).toBe(10);
     expect(Calculator.substract(500, 200)).toBe(300);
     expect(Calculator.substract(9112472, 1472568)).toBe(7639904);
   })
-  it('should substract negative numbers correctly', () => {
+  it('should substract negative numbers', () => {
     expect(Calculator.substract(-1, -1)).toBe(0);
     expect(Calculator.substract(-1, 50)).toBe(-51);
     expect(Calculator.substract(-800, -42215)).toBe(41415);
@@ -44,13 +44,13 @@ describe('Calculator substract method', () => {
 })
 
 describe('Calculator divide method', () => {
-  it('should return the result of a division correctly', () => {
+  it('should return the result of a division', () => {
     expect(Calculator.divide(1, 1)).toBe(1);
     expect(Calculator.divide(20, 10)).toBe(2);
     expect(Calculator.divide(400, 200)).toBe(2);
     expect(Calculator.divide(50, 10)).toBe(5);
   })
-  it('should divide negative numbers correctly', () => {
+  it('should divide negative numbers', () => {
     expect(Calculator.divide(-1, -1)).toBe(1);
     expect(Calculator.divide(-20, 20)).toBe(-1);
     expect(Calculator.divide(-800, -200)).toBe(4);
