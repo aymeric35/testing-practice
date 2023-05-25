@@ -1,15 +1,9 @@
 export default class Calculator {
   static add(x: number, y: number): number {
-    if (x.toString().includes('.') || y.toString().includes('.')) {
-      return this.roundingDecimals(x, y)
-    }
     return x + y;
   }
 
   static substract(x: number, y: number): number {
-    if (x.toString().includes('.') || y.toString().includes('.')) {
-      return this.roundingDecimals(x, y)
-    }
     return x - y;
   }
 
@@ -31,5 +25,9 @@ export default class Calculator {
     }
     const longest = xDecimal > yDecimal ? xDecimal : yDecimal
     return result(longest.length);
+  }
+
+  static round(x: number, decimalLength = 0): number {
+    return Math.round((x + Number.EPSILON) * Math.pow(10, decimalLength)) / Math.pow(10, decimalLength)
   }
 }
