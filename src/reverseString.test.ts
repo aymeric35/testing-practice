@@ -1,7 +1,6 @@
 import {describe, it, expect} from 'vitest';
 import { reverseString } from './reverseString';
 
-
 describe('reverse a string', () => {
   it('should reverse a string', () => {
     expect(reverseString('hello my name is Arthur.')).toBe('.ruhtrA si eman ym olleh')
