@@ -52,14 +52,14 @@ describe('Calculator divide method', () => {
   })
   it('should divide negative numbers correctly', () => {
     expect(Calculator.divide(-1, -1)).toBe(1);
-    expect(Calculator.divide(-10, 15)).toBe(-51);
-    expect(Calculator.divide(-800, -42215)).toBe(41415);
-    expect(Calculator.divide(-877, -22)).toBe(-855);
+    expect(Calculator.divide(-20, 20)).toBe(-1);
+    expect(Calculator.divide(-800, -200)).toBe(4);
+    expect(Calculator.divide(-100, -10)).toBe(10);
   })
   it('should work with decimals', () => {
-    expect(Calculator.divide(0.15, 7.15)).toBe(7.30)
-    expect(Calculator.divide(-0.10, 7.15)).toBe(7.05)
-    expect(Calculator.divide(20, 2.5)).toBe(22.5)
-    expect(Calculator.divide(-57, -2.3)).toBe(-59.3)
+    expect(Calculator.divide(0.15, 7.15)).toBe(0.020979020979020976)
+    expect(Calculator.divide(-0.10, 7.15)).toBe(-0.013986013986013986)
+    expect(Calculator.divide(20, 2.5)).toBe(8)
+    expect(Calculator.divide(-57, -2.3)).toBe(24.782608695652176)
   })
 })
