@@ -15,8 +15,8 @@ describe('Calculator add method', () => {
     expect(Calculator.add(-877, -22)).toBe(-899);
   })
   it('should work with decimals', () => {
-    expect(Calculator.add(0.15, 7.15)).toBe(7.30)
-    expect(Calculator.add(-0.10, 7.15)).toBe(7.05)
+    expect(Calculator.add(0.15, 7.15)).toBe(7.300000000000001)
+    expect(Calculator.add(-0.10, 7.15)).toBe(7.050000000000001)
     expect(Calculator.add(20, 2.5)).toBe(22.5)
     expect(Calculator.add(-57, -2.3)).toBe(-59.3)
   })
@@ -36,10 +36,10 @@ describe('Calculator substract method', () => {
     expect(Calculator.substract(-877, -22)).toBe(-855);
   })
   it('should work with decimals', () => {
-    expect(Calculator.substract(0.15, 7.15)).toBe(7.30)
-    expect(Calculator.substract(-0.10, 7.15)).toBe(7.05)
-    expect(Calculator.substract(20, 2.5)).toBe(22.5)
-    expect(Calculator.substract(-57, -2.3)).toBe(-59.3)
+    expect(Calculator.substract(0.15, 7.15)).toBe(-7)
+    expect(Calculator.substract(-0.10, 7.15)).toBe(-7.25)
+    expect(Calculator.substract(20, 2.5)).toBe(17.5)
+    expect(Calculator.substract(-57, -2.3)).toBe(-54.7)
   })
 })
 
