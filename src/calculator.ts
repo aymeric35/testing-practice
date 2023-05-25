@@ -11,6 +11,10 @@ export default class Calculator {
     return x / y;
   }
 
+  static multiply(x: number, y: number): number {
+    return x * y;
+  }
+
   static roundingDecimals(x: number, y: number): number {
     const xDecimal = x.toString().split('.')[1]
     const yDecimal = y.toString().split('.')[1]

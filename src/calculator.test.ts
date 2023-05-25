@@ -63,3 +63,24 @@ describe('Calculator divide method', () => {
     expect(Calculator.divide(-57, -2.3)).toBe(24.782608695652176)
   })
 })
+
+describe('Calculator multiply method', () => {
+  it('should return the result of a multiplication', () => {
+    expect(Calculator.multiply(1, 1)).toBe(1);
+    expect(Calculator.multiply(20, 10)).toBe(200);
+    expect(Calculator.multiply(400, 200)).toBe(80000);
+    expect(Calculator.multiply(50, 10)).toBe(500);
+  })
+  it('should multiply negative numbers', () => {
+    expect(Calculator.multiply(-1, -1)).toBe(1);
+    expect(Calculator.multiply(-20, -10)).toBe(200);
+    expect(Calculator.multiply(-400, -200)).toBe(80000);
+    expect(Calculator.multiply(-50, 10)).toBe(-500);
+  })
+  it('should work decimals', () => {
+    expect(Calculator.multiply(0.15, 7.15)).toBe(1.0725);
+    expect(Calculator.multiply(-0.10, 7.15)).toBe(-0.7150000000000001);
+    expect(Calculator.multiply(20, 2.5)).toBe(50);
+    expect(Calculator.multiply(-57, -2.3)).toBe(131.1);
+  })
+})
