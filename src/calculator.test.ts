@@ -42,3 +42,24 @@ describe('Calculator substract method', () => {
     expect(Calculator.substract(-57, -2.3)).toBe(-59.3)
   })
 })
+
+describe('Calculator divide method', () => {
+  it('should return the result of a division correctly', () => {
+    expect(Calculator.divide(1, 1)).toBe(1);
+    expect(Calculator.divide(20, 10)).toBe(2);
+    expect(Calculator.divide(400, 200)).toBe(2);
+    expect(Calculator.divide(50, 10)).toBe(5);
+  })
+  it('should divide negative numbers correctly', () => {
+    expect(Calculator.divide(-1, -1)).toBe(1);
+    expect(Calculator.divide(-10, 15)).toBe(-51);
+    expect(Calculator.divide(-800, -42215)).toBe(41415);
+    expect(Calculator.divide(-877, -22)).toBe(-855);
+  })
+  it('should work with decimals', () => {
+    expect(Calculator.divide(0.15, 7.15)).toBe(7.30)
+    expect(Calculator.divide(-0.10, 7.15)).toBe(7.05)
+    expect(Calculator.divide(20, 2.5)).toBe(22.5)
+    expect(Calculator.divide(-57, -2.3)).toBe(-59.3)
+  })
+})
